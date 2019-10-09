@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form action="{{ url_for('predict') }}" method="POST">
+          <h2 class="msg-title">Enter Your Message Here</h2>
+          <textarea
+            class="message"
+            name="message"
+            rows="10"
+            cols="50"
+          ></textarea
+          ><br />
+          <input class="btn" type="submit" class="btn-info" value="Predict" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
